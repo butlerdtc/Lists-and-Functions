@@ -28,10 +28,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.00_MGS_Childcare_v2.executor": "Run",
+    "Python.silent_auction.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Users/Robson School/OneDrive - Middleton Grange School/YR12/12DTC/2.7 and 2.8 Programming/Exercises/Lists and Functions/MGS Childcare",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "settings.editor.selected.configurable": "settings.sync"
   }
 }]]></component>
   <component name="RecentsManager">
