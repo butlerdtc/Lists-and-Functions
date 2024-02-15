@@ -1,6 +1,7 @@
 """ Silent Auction - V1 """
 
 
+# Function to check if numbers are entered and then run error control if not
 def number_checker(question):
     error = "\nSorry, you must enter a valid number\n"
     number = ""
@@ -12,6 +13,7 @@ def number_checker(question):
             print(error)
 
 
+# Statement formatter
 def formatter(symbol, text):
     sides = symbol * 3
     formatted_text = f"{sides} {text} {sides}"
@@ -19,22 +21,26 @@ def formatter(symbol, text):
     return f"{top_bottom}\n{formatted_text}\n{top_bottom}"
 
 
+# Function of main menu to run other functions
 def menu():
     print(formatter("*", "Robson's Silent Auction"))
     bidding()
     print("Goodbye")
 
 
+# Function to ask for item to sell
 def item():
     auction_item = input("What item would you like to add to the bidding: ")
     return auction_item
 
 
+# Function to ask for reserve price
 def reserve():
     price = number_checker("What would you like the reserve price to be: ")
     return price
 
 
+# Function to ask for a bid then check if its higher and print outcome
 def bidding():
     auction_item = item()
     cost = reserve()

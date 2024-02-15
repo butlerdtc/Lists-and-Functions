@@ -2,6 +2,7 @@
 """
 
 
+# Function to run the instructions and system
 def main():
     choice = 0
     while choice != 5:
@@ -41,6 +42,7 @@ def dropoff():
     print(f"{name} was added to the roll")
 
 
+# Function to ask for input then remove name from list if valid
 def pickup():
     check_name = input("Enter the name of the child to pick up: ")
     if check_name not in roll:
@@ -50,6 +52,7 @@ def pickup():
         print(f"{check_name} has been removed from the roll")
 
 
+# Function to calculate the cost based on number of children and hours spent
 def calc_cost():
     hours = int(input("How many hours: "))
     children = len(roll)
@@ -57,6 +60,7 @@ def calc_cost():
     print(f"You must pay ${charge}")
 
 
+# Function to print the lists
 def print_roll():
     print(", ".join(roll))
 
